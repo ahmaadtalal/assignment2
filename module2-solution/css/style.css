@@ -1,0 +1,82 @@
+/* Base Styles */
+body {
+    background-color: peachpuff;
+    font-family: 'Varela Round';
+}
+* {
+    box-sizing: border-box;
+}
+h1 {
+    margin-bottom: 80px;
+    margin-top: 80px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 900;
+    font-size: 60px;
+}
+section {
+    background-color: rgba(128, 128, 128, 0.71);
+    border: 4px solid black;
+    margin: 10px 0;
+    padding: 20px 25px 5px 25px;
+    position: relative;
+}
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0px 30px;
+}
+#p1, #p2, #p3 {
+    background-color: rgba(255, 155, 188, 0.745);
+    border-bottom: 3px solid black;
+    border-left: 3px solid black;
+    height: 30px;
+    width: 150px;
+    text-align: center;
+    padding-top: 4px;
+    margin: 0;
+    font-weight: 700;
+    font-size: larger;
+}
+#p2 {
+    background-color: rgb(189, 72, 72);
+    color: white;
+}
+#p3 {
+    background-color: rgb(238, 208, 170);
+}
+#d1, #d2, #d3 {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+#p4, #p5, #p6 {
+    font-weight: 700;
+    font-size: large;
+}
+
+/* Desktop View */
+@media (min-width: 992px) {
+    .col-lg-4 {
+        width: 32%;
+    }
+}
+
+/* Tablet View */
+@media (min-width: 768px) and (max-width: 991px) {
+    .col-md-6 {
+        width: 48%;
+        margin: 1%;
+    }
+    .col-md-12 {
+        width: 100%;
+    }
+}
+
+/* Mobile View */
+@media (max-width: 767px) {
+    .col-sm-12 {
+        width: 100%;
+    }
+}
